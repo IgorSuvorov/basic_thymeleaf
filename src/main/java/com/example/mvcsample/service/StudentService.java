@@ -12,4 +12,10 @@ import java.util.List;
 public interface StudentService {
     List<StudentDTO> getAllStudents();
     StudentDTO createStudent(StudentDTO studentDTO);
+
+    StudentDTO getStudentById(Long id);
+
+    void updateStudent(StudentDTO studentDTO);
+
+    void deleteStudent(Long studentId);
 }
